@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherFriend</title>
+    <link rel="stylesheet" href="Styles/index.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <h1>WeatherFriend🌦️</h1>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="header">
+            <div class="brand"><h1>WeatherFriend🌦️</h1></div>
+            <div class="search">
+                <input autofocus type="search" name="search" id="search" placeholder="Search for any region">
+                <button type="button"><svg fill="rgb(0, 211, 211)" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="m12 2c-5.5 0-10 4.5-10 10s4.5 10 10 10c2.2 0 4.3-.7 6-2l9 10 3-3-10-9c1.3-1.7 2-3.8 2-6 0-5.5-4.5-10-10-10zm0 3c3.9 0 7 3.1 7 7s-3.1 7-7 7-7-3.1-7-7 3.1-7 7-7z"/></svg></button>
+            </div>
+            <div class="header-buttons">
+                <button>Log In</button>
+                <button>Sign Up</button>
+            </div>
+        </div>
+        <div class="today"><span>today's temperature in </span> <p class="city"></p> <img class="weathericon"  alt=""> <h2 class="temp"></h2></div>
+        <div class="title"><h1>for businesses and clients</h1></div><br>
+        <div class="weather-info">
+            <div class="info-left">
+                <span>a week weather information 1-7 february 2024</span>
+                <div class="left-links">
+                    <h3>regions in your country </h3>
+                    <div class="province">
+                        <div class="kigali kgl"><h2>Kigali city</h2><p class="arrow"><svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></p></div>
+                        <div class="kigali-items kgl1">
+                            <header>in kigali city there are &DownTeeArrow;</header>
+                            <div class="kgltemp">
+                                <div class="bijyanye"><br>
+                                    <img class="weathericon2" src="" alt=""><br>
+                                    <p class="temp2"></p>
+                                </div>
+                            </div>
+                            <div class="detail">
+                                <div class="col">
+                                    <img src="images/FORUSE/humidity.png" alt="humdity">
+                                    <div>
+                                        <p class="humidity">g</p>
+                                        <p class="pp">humidity</p>
+                                    </div>
+                                </div>
+                                <div class="col col1">
+                                    <img src="images/FORUSE/icons8_wind.ico" alt="humdity">
+                                    <div>
+                                        <p class="wind">g</p>
+                                        <p class="pp">wind speed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kigali east est"><h2>Eastern Province</h2><p class="arrow1"><svg class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></p></div>
+                        <div class="kigali-items east-items">
+                            <header>in Eastern Province there are &DownTeeArrow;</header>
+                            <div class="kgltemp">
+                                <div class="bijyanye"><br>
+                                    <img class="weathericon3" src="" alt=""><br>
+                                    <p class="temp3"></p>
+                                </div>
+                            </div>
+                            <div class="detail">
+                                <div class="col">
+                                    <img src="images/FORUSE/humidity.png" alt="humdity">
+                                    <div>
+                                        <p class="humidity1">g</p>
+                                        <p class="pp">humidity</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <img src="images/FORUSE/icons8_wind.ico" alt="humdity">
+                                    <div>
+                                        <p class="wind1">g</p>
+                                        <p class="pp">wind speed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kigali west wst"><h2>Western Province</h2><p class="arrow2"><svg class="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></p></div>
+                        <div class="kigali-items west-items">
+                            <header>in Western Province there are &DownTeeArrow;</header>
+                            <div class="kgltemp">
+                                <div class="bijyanye"><br>
+                                    <img class="weathericon4" src="" alt=""><br>
+                                    <p class="temp4"></p>
+                                </div>
+                            </div>
+                            <div class="detail">
+                                <div class="col">
+                                    <img src="images/FORUSE/humidity.png" alt="humdity">
+                                    <div>
+                                        <p class="humidity3">g</p>
+                                        <p class="pp">humidity</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <img src="images/FORUSE/icons8_wind.ico" alt="humdity">
+                                    <div>
+                                        <p class="wind3">g</p>
+                                        <p class="pp">wind speed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kigali north nth"><h2>northern Province</h2><p class="arrow3"><svg class="svg3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></p></div>
+                        <div class="kigali-items north-items">
+                            <header>in northern Province there are &DownTeeArrow;</header>
+                            <div class="kgltemp">
+                                <div class="bijyanye"><br>
+                                    <img class="weathericon5" src="" alt=""><br>
+                                    <p class="temp5"></p>
+                                </div>
+                            </div>
+                            <div class="detail">
+                                <div class="col">
+                                    <img src="images/FORUSE/humidity.png" alt="humdity">
+                                    <div>
+                                        <p class="humidity3">g</p>
+                                        <p class="pp">humidity</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <img src="images/FORUSE/icons8_wind.ico" alt="humdity">
+                                    <div>
+                                        <p class="wind3">g</p>
+                                        <p class="pp">wind speed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kigali south sth"><h2>southern Province</h2><p class="arrow4"><svg class="svg4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></p></div>
+                        <div class="kigali-items south-items">
+                            <header>in southern Province there are &DownTeeArrow;</header>
+                            <div class="kgltemp">
+                                <div class="bijyanye"><br>
+                                    <img class="weathericon6" src="" alt=""><br>
+                                    <p class="temp6"></p>
+                                </div>
+                            </div>
+                            <div class="detail">
+                                <div class="col">
+                                    <img src="images/FORUSE/humidity.png" alt="humdity">
+                                    <div>
+                                        <p class="humidity4">g</p>
+                                        <p class="pp">humidity</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <img src="images/FORUSE/icons8_wind.ico" alt="humdity">
+                                    <div>
+                                        <p class="wind4">g</p>
+                                        <p class="pp">wind speed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-right">
+                <span>products we propose you to sell or buy today.</span><br>  
+                <div class="products">
+                    <div class="products-items">
+                        <div class="items-card tipz">
+                            <div class="card-image">
+                                <img src="images/icons8_tips.jpg" alt="product-11">
+                            </div>
+                            <div class="card-name">A tip of the day</div>
+                        </div>
+                        <div class="items-card item1">
+                            <div class="card-image">
+                                <img src="images/Drink 2.png" alt="Drink">
+                            </div>
+                            <div class="card-name">Cocktails</div>
+                        </div>
+                        <div class="items-card item2">
+                            <div class="card-image">
+                                <img src="images/product-11.jpg" alt="product-11">
+                            </div>
+                            <div class="card-name">Sodas</div>
+                        </div>
+                        <div class="items-card">
+                            <div class="card-image"></div>
+                            <div class="card-name">Mineral Water</div>
+                        </div>
+                    </div>
+                    <div class="products-place"> 
+                        <div class="tip-body tips">
+                            <h2>a tip of the day</h2>
+                            <div class="today"><span>Temperature  is</span><img class="weathericon1" src="" alt=""> <h2 class="city0"> </h2> in <p class="temperature" ></p></div><br>
+                            <div class="tip-word">
+                                <p>But between 12h00 and 15h00 rain will be raining, so if you have any plan you can postpon it or do it before 12h00. </p><br>
+                            </div>
+                            <div class="tip-card">
+                                <strong>But if rain is raining and no transport you have, we can help you &DownTeeArrow;</strong>
+                                <strong>Call for transport down &DownTeeArrow;</strong>
+                                <div class="left-card">
+                                    <div class="left-pic">
+                                        <img src="images/team-1.jpg" alt="">
+                                    </div>
+                                    <div class="left-pic-name">
+                                        <span>Bugingo Innocent</span>
+                                        <span id="professional">Taxi Driver</span>
+                                        <div class="addre">
+                                            <span>Contact:0781999927</span>
+                                            <div class="og">
+                                                <img src="images/icons8_facebook_1.ico" alt="">
+                                                <img src="images/icons8_whatsapp.ico" alt="">
+                                                <img src="images/icons8_twitter.ico" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="left-card">
+                                    <div class="left-pic">
+                                        <img src="images/team-4.jpg" alt="">
+                                    </div>
+                                    <div class="left-pic-name">
+                                        <span>Bugingo Innocent</span>
+                                        <span id="professional">Motorcyclist</span>
+                                        <div class="addre">
+                                            <span>Contact:0781999927</span>
+                                            <div class="og">
+                                                <img src="images/icons8_facebook_1.ico" alt="">
+                                                <img src="images/icons8_whatsapp.ico" alt="">
+                                                <img src="images/icons8_twitter.ico" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="left-card">
+                                    <div class="left-pic">
+                                        <img src="images/team-1.jpg" alt="">
+                                    </div>
+                                    <div class="left-pic-name">
+                                        <span>Bugingo Innocent</span>
+                                        <span id="professional">Taxi Driver</span>
+                                        <div class="addre">
+                                            <span>Contact:0781999927</span>
+                                            <div class="og">
+                                                <img src="images/icons8_facebook_1.ico" alt="">
+                                                <img src="images/icons8_whatsapp.ico" alt="">
+                                                <img src="images/icons8_twitter.ico" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="left-card">
+                                    <div class="left-pic">
+                                        <img src="images/team-4.jpg" alt="">
+                                    </div>
+                                    <div class="left-pic-name">
+                                        <span>Bugingo Innocent</span>
+                                        <span id="professional">Motorcyclist</span>
+                                        <div class="addre">
+                                            <span>Contact:0781999927</span>
+                                            <div class="og">
+                                                <img src="images/icons8_facebook_1.ico" alt="">
+                                                <img src="images/icons8_whatsapp.ico" alt="">
+                                                <img src="images/icons8_twitter.ico" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cocktail cock">
+                            <div class="cock-head">
+                                <span>Cocktails avilable in:</span>
+                                <div class="close close1">&times;</div>
+                            </div>
+                            <div class="place">
+                                <h2>Cammillia Restaurant</h2>
+                                <div class="place-area">
+                                    Contacts: 0780000128, Street: KN207st
+                                    <div class="social">
+                                        <a href=""><img src="images/icons8_facebook_1.ico" alt="icons8_facebook_1"></a>
+                                        <a href=""><img src="images/icons8_instagram_logo.ico" alt="icons8_facebook_1"></a>
+                                        <a href=""><img src="images/icons8_twitter.ico" alt="icons8_facebook_1"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place">
+                                <h2>Macoco Restaurant</h2>
+                                <div class="place-area">
+                                    Contacts: 0780000128, Street: KN207st
+                                    <div class="social">
+                                        <a href=""><img src="images/icons8_facebook_1.ico" alt="icons8_facebook_1"></a>
+                                        <a href=""><img src="images/icons8_instagram_logo.ico" alt="icons8_facebook_1"></a>
+                                        <a href=""><img src="images/icons8_twitter.ico" alt="icons8_facebook_1"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place">
+                                <h2>Visit Rwanda Restaurant</h2>
+                                <div class="place-area">
+                                    Contacts: 0780000128, Street: KN207st
+                                    <div class="social">
+                                        <a href=""><img src="images/icons8_facebook_1.ico" alt="icons8_facebook_1"></a>
+                                        <a href=""><img src="images/icons8_instagram_logo.ico" alt="icons8_facebook_1"></a>
+                                        <a href=""><img src="images/icons8_twitter.ico" alt="icons8_facebook_1"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- soda kadiv -->
+                        <div class="cocktail soda">
+                            <div class="cock-head">
+                                <span>Sodas avilable in:</span>
+                                <div class="close close2">&times;</div>
+                            </div>
+                            <div class="place">
+                                <h2>Kirenga Liquor Store</h2>
+                                <div class="place-area">
+                                    Contacts: 0780000128, Street: KN207st
+                                    <div class="social">
+                                        <a href=""><img src="images/icons8_facebook_1.ico" alt="icons8_facebook_1"></a>
+                                        <a href=""><img src="images/icons8_instagram_logo.ico" alt="icons8_facebook_1"></a>
+                                        <a href=""><img src="images/icons8_twitter.ico" alt="icons8_facebook_1"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place">
+                                <h2>Macoco Restaurant</h2>
+                                <div class="place-area">
+                                    Contacts: 0780000128, Street: KN207st
+                                    <div class="social">
+                                        <a href=""><img src="images/icons8_facebook_1.ico" alt="icons8_facebook_1"></a>
+                                        <a href=""><img src="images/icons8_instagram_logo.ico" alt="icons8_facebook_1"></a>
+                                        <a href=""><img src="images/icons8_twitter.ico" alt="icons8_facebook_1"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place">
+                                <h2>Visit Rwanda Restaurant</h2>
+                                <div class="place-area">
+                                    Contacts: 0780000128, Street: KN207st
+                                    <div class="social">
+                                        <a href=""><img src="images/icons8_facebook_1.ico" alt="icons8_facebook_1"></a>
+                                        <a href=""><img src="images/icons8_instagram_logo.ico" alt="icons8_facebook_1"></a>
+                                        <a href=""><img src="images/icons8_twitter.ico" alt="icons8_facebook_1"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Js/weather.js"></script>
+    <script src="Js/loading.js"></script>
+    <script src="Js/index.js"></script>
+    <script src="Js/locator.js"></script>
+</body>
+</html>
